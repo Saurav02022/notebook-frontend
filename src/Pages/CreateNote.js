@@ -32,7 +32,11 @@ export default function CreateNote() {
         category,
       };
       await axios
-        .post("https://notebook-backend.cyclic.app/notes/create", data, config)
+        .post(
+          "https://notebook-backend-murex.vercel.app/notes/create",
+          data,
+          config
+        )
         .then(
           () =>
             toast({

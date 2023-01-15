@@ -36,7 +36,7 @@ export default function Signup() {
         password,
       };
       await axios
-        .post("https://notebook-backend.cyclic.app/users/register", data)
+        .post("https://notebook-backend-murex.vercel.app/users/register", data)
         .then(
           () =>
             toast({

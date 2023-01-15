@@ -8,7 +8,10 @@ const config = {
   },
 };
 const server = async () => {
-  return await axios.get("https://notebook-backend.cyclic.app/notes/", config);
+  return await axios.get(
+    "https://notebook-backend-murex.vercel.app/notes/",
+    config
+  );
 };
 
 const Data = () => {
@@ -18,7 +21,10 @@ const Data = () => {
 
   const handlebtn = async (_id) => {
     await axios
-      .delete(`https://notebook-backend.cyclic.app/notes/delete/${_id}`, config)
+      .delete(
+        `https://notebook-backend-murex.vercel.app/notes/delete/${_id}`,
+        config
+      )
       .then(() => {
         toast({
           description: "Notes deleted",

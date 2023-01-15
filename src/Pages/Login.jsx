@@ -28,7 +28,7 @@ export default function Login() {
         password,
       };
       await axios
-        .post("https://notebook-backend.cyclic.app/users/login", data)
+        .post("https://notebook-backend-murex.vercel.app/users/login", data)
         .then((res) => {
           const { token } = res.data;
           localStorage.setItem("token", token);
